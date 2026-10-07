@@ -41,9 +41,9 @@ jobs:
           TCB_SECRET_KEY: ${{ secrets.TCB_SECRET_KEY }}
           TCB_ENV_ID: ${{ secrets.TCB_ENV_ID }}
         run: |
-          test -n "$TCB_SECRET_ID" && echo "SECRET_ID OK"
-          test -n "$TCB_SECRET_KEY" && echo "SECRET_KEY OK"
-          test -n "$TCB_ENV_ID" && echo "ENV_ID OK"
-          npm install -g @cloudbase/cli@2
+          test -n "$TCB_SECRET_ID" && echo "SECRET_ID OK" || (echo "TCB_SECRET_ID 为空，请检查 GitHub Secrets" && exit 1)
+          test -n "$TCB_SECRET_KEY" && echo "SECRET_KEY OK" || (echo "TCB_SECRET_KEY 为空，请检查 GitHub Secrets" && exit 1)
+          test -n "$TCB_ENV_ID" && echo "ENV_ID OK" || (echo "TCB_ENV_ID 为空，请检查 GitHub Secrets" && exit 1)
+          npm install -g @cloudbase/cli
           tcb login --apiKeyId "$TCB_SECRET_ID" --apiKey "$TCB_SECRET_KEY"
           tcb hosting deploy ./public -e "$TCB_ENV_ID"
