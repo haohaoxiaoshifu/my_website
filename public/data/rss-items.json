@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-10-07T14:53:10+08:00",
+  "sources": [
+    {
+      "title": "腾讯安全应急响应中心",
+      "url": "https://security.tencent.com/index.php/feed/blog/0",
+      "items": 20
+    }
+  ],
+  "items": [
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/226",
+      "title": "TencentOS 科维斯AI：SCTPhantom 潜伏18年的Linux内核提权与容器逃逸漏洞",
+      "link": "https://security.tencent.com/index.php/blog/msg/226",
+      "published": "2026-08-06",
+      "summary": "2026年7月23日，Linux内核主线合入了一份很短的补丁。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/225",
+      "title": "AI Agent 的记忆，为什么会成为攻击者的数据金矿？｜朱雀实验室",
+      "link": "https://security.tencent.com/index.php/blog/msg/225",
+      "published": "2026-08-04",
+      "summary": "本文介绍了 Memory Heist 攻击的完整链路，并通过 AI-Infra-Guard（A.I.G）的 Agent 安全扫描模块（agent-scan）实现了对该攻击的自动化检测",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/224",
+      "title": "我们扫描了五万个 Skill，发现危险仍然存在 ｜ 朱雀实验室",
+      "link": "https://security.tencent.com/index.php/blog/msg/224",
+      "published": "2026-04-26",
+      "summary": "真正的问题不是扫出了什么，是：这个生态还有没有，有效的免疫系统？ 腾讯安全平台部负责人 Coolc腾讯安全平台部负责人 Coolc",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/222",
+      "title": "从发现 33 个 0day 漏洞，看安全攻防的下半场 ｜ 朱雀实验室",
+      "link": "https://security.tencent.com/index.php/blog/msg/222",
+      "published": "2026-04-10",
+      "summary": "2026 年 4 月 7 日，Anthropic 联合 Apple、Google、Microsoft 等 45 家机构发布 Project Glasswing 计划，并宣布其尚未公开发行的前沿模型 Claude Mythos Preview 在所有主要操作系统和浏览器中发现了数千个…",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/214",
+      "title": "从4.8亿下载量的 LiteLLM投毒事件，看 AI 基础设施安全攻与防 | 朱雀实验室",
+      "link": "https://security.tencent.com/index.php/blog/msg/214",
+      "published": "2026-03-31",
+      "summary": "近日，知名大模型网关工具 LiteLLM 遭遇供应链投毒，其 1.82.7和1.82.8 版本被植入恶意代码。由于该项目月下载量极高(近1亿月下载量)，且被 DSPy 等众多主流…",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/215",
+      "title": "当AI学会背刺：深度剖析Agent Skills的安全陷阱 ｜ 朱雀实验室",
+      "link": "https://security.tencent.com/index.php/blog/msg/215",
+      "published": "2026-01-23",
+      "summary": "你是否想过，当你让 AI 帮你写代码时，它可能正在你背后悄悄地干着其它事——比如，加密你的所有文件，然后弹出一个勒索提示？这不是吓唬你，而是我们研究后发现在各种…",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/216",
+      "title": "当 AI 成为代码贡献者，软件安全正在发生怎样的变化？",
+      "link": "https://security.tencent.com/index.php/blog/msg/216",
+      "published": "2026-01-05",
+      "summary": "随着 AI 技术加速融入软件研发流程，AI 已经成为新时代的“代码贡献者”。在显著提升研发效率的同时，AI 生成代码也对软件安全、漏洞治理和工程责任边界提出了新的挑战。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/217",
+      "title": "A.S.E 2.0 正式发布 | 开放生态 · 动静协同 · 让 AI 编程安全可量化",
+      "link": "https://security.tencent.com/index.php/blog/msg/217",
+      "published": "2025-11-07",
+      "summary": "A.S.E (AI Code Generation Security Evaluation) - 你的 AI 鉴赏官，为你提供大模型安全实践工具，让你一眼就能选出最靠谱的 AI 队友。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/218",
+      "title": "00后黑客落网！曾运营大型僵尸网络，频繁攻击腾讯游戏、DeepSeek、X平台",
+      "link": "https://security.tencent.com/index.php/blog/msg/218",
+      "published": "2025-09-26",
+      "summary": "据美国司法部通报，活跃多年的高危DDoS僵尸网络“RapperBot”（历史频繁攻击腾讯游戏、DeepSeek、X平台的幕后黑手）现已被成功取缔。该僵尸网络主谋、22岁的美国俄勒冈州男子Ethan…",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/219",
+      "title": "DeepSeek本地化部署有风险！快来看看你中招了吗？｜ 朱雀实验室",
+      "link": "https://security.tencent.com/index.php/blog/msg/219",
+      "published": "2025-02-18",
+      "summary": "2025年伊始，AI领域迎来一个重要变革 - DeepSeek R1开源发布，凭借着低成本、性能出众的优势，这个模型在短短几周内就获得空前关注。由于官网服务经常繁忙，大家开始选择使用Ollama+OpenWebUI、LM…",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/213",
+      "title": "AI 帮你高效构建代码安全策略【大模型应用实践系列四】",
+      "link": "https://security.tencent.com/index.php/blog/msg/213",
+      "published": "2025-01-08",
+      "summary": "腾讯啄木鸟代码安全团队，依托混元大模型的超强代码理解和安全分析能力，在SQL注入威胁检测场景验证中，新增识别上百个漏洞检测策略，相比传统方法人效比提升3.8倍，在Github高star项目上斩获10+0day漏洞。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/212",
+      "title": "AI猎手：我们用大模型挖到了0day漏洞！【大模型应用实践系列三】",
+      "link": "https://security.tencent.com/index.php/blog/msg/212",
+      "published": "2025-01-03",
+      "summary": "AI版“赏金猎人”登场，基于混元大模型能力打造的自动漏洞挖掘工具，7*24小时自动感知、追踪、挖橱0day。 AI猎人VS黑客的角逐战正式开始。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/211",
+      "title": "AI助力！明文密码泄漏无处遁形【大模型应用实践系列二】",
+      "link": "https://security.tencent.com/index.php/blog/msg/211",
+      "published": "2024-12-05",
+      "summary": "本文聚焦于密钥硬编码的问题，分析了传统检测策略的缺陷，并详细介绍了大模型在该场景下的优势、检测实施方案和效果。我们将继续推出更多关于大模型在研发安全、网络安全、威胁情报等领域的应用探索与总结",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/210",
+      "title": "大模型应用实践（一）：AI助力Code Review安全漏洞发现",
+      "link": "https://security.tencent.com/index.php/blog/msg/210",
+      "published": "2024-11-27",
+      "summary": "借助混元大模型，腾讯啄木鸟代码安全团队在代码评审（Code Review，下文简称CR）场景下的安全漏洞检出能力取得显著提升，日均发现和阻断300+个代码安全风险，极大提升了公司核心数据资产安全性。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/202",
+      "title": "红蓝对抗之隐蔽通信应用及防御",
+      "link": "https://security.tencent.com/index.php/blog/msg/202",
+      "published": "2021-09-27",
+      "summary": "腾讯蓝军和红军十多年案例经验、总结沉淀",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/197",
+      "title": "攻防启示：Chromium组件风险剖析与收敛",
+      "link": "https://security.tencent.com/index.php/blog/msg/197",
+      "published": "2021-07-15",
+      "summary": "Chromium内核的安全问题，早已悄无声息地牵动着互联网生活方方面面。基于对实战经历的复盘，本文将从Chromium架构及安全机制概况入手，剖析Chromium组件在多场景下给企业带来的安全风险并一探收敛方案。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/183",
+      "title": "红蓝对抗中的云原生漏洞挖掘及利用实录",
+      "link": "https://security.tencent.com/index.php/blog/msg/183",
+      "published": "2021-03-02",
+      "summary": "分享攻防场景中的云原生相关漏洞挖掘及漏洞利用实例。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/157",
+      "title": "腾讯蓝军安全通告：WebLogic远程代码执行漏洞(CVE-2020-14645)",
+      "link": "https://security.tencent.com/index.php/blog/msg/157",
+      "published": "2020-07-15",
+      "summary": "Oracle官方发布WebLogic安全更新，修复严重漏洞。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/154",
+      "title": "红蓝对抗之Windows内网渗透",
+      "link": "https://security.tencent.com/index.php/blog/msg/154",
+      "published": "2020-06-30",
+      "summary": "无论是渗透测试，还是红蓝对抗，目的都是暴露风险，促进提升安全水平。企业往往在外网布置重兵把守，而内网防护相对来说千疮百孔，所以渗透高手往往通过攻击员工电脑、外网服务、职场WiFi等方式进入内网，然后发起内网渗透。而国内外红蓝对抗服务和开源攻击工具大多数以攻击Windows域为主，主要原因是域控拥有上帝能力，可以控制域内所有员工电脑，进而利用员工的合法权限获取目标权限和数据，达成渗透目的。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    },
+    {
+      "id": "https://security.tencent.com/index.php/blog/msg/146",
+      "title": "现网发现新型DVR UDP反射攻击手法记实",
+      "link": "https://security.tencent.com/index.php/blog/msg/146",
+      "published": "2020-03-31",
+      "summary": "近日，游戏行业某云客户遭受到大流量DDoS攻击，宙斯盾团队跟进溯源。在对抓取的攻击样本进行深入分析之后，我们发现这是一种新的UDP反射放大攻击手法，相关情况也分享同步与业界同行。",
+      "source": "腾讯安全应急响应中心",
+      "source_url": "https://security.tencent.com/index.php/feed/blog/0"
+    }
+  ],
+  "errors": []
+}

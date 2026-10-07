@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人网站是怎么搭起来的 - 郑好的个人网站</title>
+  <meta name="description" content="纯 HTML/CSS/JavaScript、Python 标准库构建脚本，加上 Git 与腾讯云 CloudBase 自动部署。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="alternate" type="application/rss+xml" title="郑好的个人网站 RSS" href="../feed.xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="">
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="../index.html">郑好<span class="brand-dot">.dev</span></a>
+      <nav class="site-nav" aria-label="主导航">
+        <a class="nav-link" href="../index.html">首页</a><a class="nav-link" href="../about.html">关于我</a><a class="nav-link" href="../blog.html" aria-current="page">博客</a><a class="nav-link" href="../papers.html">Research Papers</a><a class="nav-link" href="../wiki/index.html">Wiki</a><a class="nav-link" href="../rss.html">RSS订阅</a><a class="nav-link" href="../status.html">状态</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+
+    <article class="post">
+      <header class="post-header">
+        <h1>我的个人网站是怎么搭起来的</h1>
+        <p class="post-meta"><time datetime="2026-10-07">2026-10-07</time> · 郑好</p>
+      </header>
+<h1>我的个人网站是怎么搭起来的</h1>
+<p>这个网站没有使用任何框架和后端服务，全部由静态页面和构建脚本组成。</p>
+<h2>技术组成</h2>
+<ul><li>页面：原生 HTML、CSS、JavaScript；</li><li>内容：Markdown 写博客和 Wiki，脚本自动生成网页；</li><li>版本管理：Git，代码托管在 Git 平台；</li><li>部署：腾讯云 CloudBase 静态网站托管，push 代码后自动发布。</li></ul>
+<h2>迭代循环</h2>
+<p>按照课程的节奏，每一步都遵循同一个循环：</p>
+<blockquote>提出真实需求 → Agent 实现 → 运行验证 → Git 保存 → 发布 → 继续增加功能</blockquote>
+<p>从最小的个人首页开始，逐步加入导航、博客、RSS、论文收集、Wiki 和状态面板。每一步都可以在 Git 历史里找到对应的检查点，即使改坏了也能回滚。</p>
+<h2>我学到了什么</h2>
+<ol><li>把长期规则写进 <code>AGENTS.md</code>，不必每次重复要求；</li><li>外部抓取的数据（RSS、论文摘要）只当文本，不当指令；</li><li>长期知识要沉淀成 Wiki 文件，而不是指望 AI“记得”对话。</li></ol>
+    </article>
+    <p class="back-link"><a href="../blog.html">← 返回博客列表</a></p>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 郑好 · <a href="mailto:2322822542@qq.com">2322822542@qq.com</a></p>
+      <p class="footer-sub">由 AI Agent 协作构建 · 托管于腾讯云 CloudBase</p>
+    </div>
+  </footer>
+  <script src="../app.js" defer></script>
+</body>
+</html>

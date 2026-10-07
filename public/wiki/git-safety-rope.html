@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git 是 Agent 开发的安全绳 - 郑好的个人网站</title>
+  <meta name="description" content="Wiki：Git 是 Agent 开发的安全绳">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="alternate" type="application/rss+xml" title="郑好的个人网站 RSS" href="../feed.xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="wiki">
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="../index.html">郑好<span class="brand-dot">.dev</span></a>
+      <nav class="site-nav" aria-label="主导航">
+        <a class="nav-link" href="../index.html">首页</a><a class="nav-link" href="../about.html">关于我</a><a class="nav-link" href="../blog.html">博客</a><a class="nav-link" href="../papers.html">Research Papers</a><a class="nav-link" href="../wiki/index.html" aria-current="page">Wiki</a><a class="nav-link" href="../rss.html">RSS订阅</a><a class="nav-link" href="../status.html">状态</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+
+
+    <article class="post wiki-page" data-slug="git-safety-rope">
+      <header class="post-header">
+        <h1>Git 是 Agent 开发的安全绳</h1>
+        <p class="post-meta">更新于 2026-10-07 · <span class="tag">Git</span><span class="tag">课程笔记</span></p>
+      </header>
+<h1>Git 是 Agent 开发的安全绳</h1>
+<p>Agent 能一次修改很多文件，也可能改错。Git 让人看清改动、保存检查点、在出问题时回滚。</p>
+<h2>关键手段</h2>
+<ul><li><code>git diff</code>：看清 Agent 到底改了什么；</li><li>commit：保存一个可恢复的检查点；</li><li>branch：隔离尚未完成的实验；</li><li>Merge Request：合并前由人审核；</li><li>CI/CD：自动构建、测试和发布。</li></ul>
+<h2>为什么回滚比“最终版2”可靠</h2>
+<p>没有 Git 时，常见结果是一堆 <code>网站-最终版/</code>、<code>网站-最终版2/</code>、<code>网站-真的最终版/</code>，无法知道哪个版本改了什么。Git 的每次提交都带有作者、时间、改动内容和提交说明，可以精确回到任意历史点。</p>
+<p>相关实践：<a class="wikilink" href="agent-experiment.html">我的第一次 Agent 实验</a>、<a class="wikilink" href="agent-loop.html">Agent Loop 迭代循环</a>。</p>
+    </article>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 郑好 · <a href="mailto:2322822542@qq.com">2322822542@qq.com</a></p>
+      <p class="footer-sub">由 AI Agent 协作构建 · 托管于腾讯云 CloudBase</p>
+    </div>
+  </footer>
+  <script src="../app.js" defer></script>
+</body>
+</html>

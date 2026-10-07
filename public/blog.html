@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>博客 - 郑好的个人网站</title>
+  <meta name="description" content="郑好的博客文章">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="alternate" type="application/rss+xml" title="郑好的个人网站 RSS" href="feed.xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="">
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html">郑好<span class="brand-dot">.dev</span></a>
+      <nav class="site-nav" aria-label="主导航">
+        <a class="nav-link" href="index.html">首页</a><a class="nav-link" href="about.html">关于我</a><a class="nav-link" href="blog.html" aria-current="page">博客</a><a class="nav-link" href="papers.html">Research Papers</a><a class="nav-link" href="wiki/index.html">Wiki</a><a class="nav-link" href="rss.html">RSS订阅</a><a class="nav-link" href="status.html">状态</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+
+    <h1>博客</h1>
+    <p class="page-lead">用 Markdown 写作，构建时自动生成页面。<a href="feed.xml">订阅 RSS</a>。</p>
+    <div class="card-list"><article class="list-card">
+          <time datetime="2026-10-07">2026-10-07</time>
+          <h2><a href="posts/how-this-site-is-built.html">我的个人网站是怎么搭起来的</a></h2>
+          <p>纯 HTML/CSS/JavaScript、Python 标准库构建脚本，加上 Git 与腾讯云 CloudBase 自动部署。</p>
+        </article><article class="list-card">
+          <time datetime="2026-10-05">2026-10-05</time>
+          <h2><a href="posts/hello-agent.html">我的第一次 Agent 实验</a></h2>
+          <p>从一句模糊需求到一个可以验收的个人主页。</p>
+        </article></div>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 郑好 · <a href="mailto:2322822542@qq.com">2322822542@qq.com</a></p>
+      <p class="footer-sub">由 AI Agent 协作构建 · 托管于腾讯云 CloudBase</p>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

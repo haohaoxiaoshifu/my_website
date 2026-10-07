@@ -1,0 +1,49 @@
+# GitHub Actions：push 到 main 后自动构建并部署到腾讯云 CloudBase 静态托管
+# 需要在 仓库 Settings -> Secrets and variables -> Actions 中添加：
+#   TCB_SECRET_ID、TCB_SECRET_KEY、TCB_ENV_ID
+name: build-and-deploy-cloudbase
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 采集论文与 RSS、构建站点
+        run: |
+          python scripts/collect_papers.py --limit 10
+          python scripts/fetch_feeds.py
+          python scripts/check_papers.py
+          python scripts/build.py
+
+      - name: 安装 Node 与 CloudBase CLI
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 部署到 CloudBase
+        env:
+          TCB_SECRET_ID: ${{ secrets.TCB_SECRET_ID }}
+          TCB_SECRET_KEY: ${{ secrets.TCB_SECRET_KEY }}
+          TCB_ENV_ID: ${{ secrets.TCB_ENV_ID }}
+        run: |
+          test -n "$TCB_SECRET_ID" && echo "SECRET_ID OK"
+          test -n "$TCB_SECRET_KEY" && echo "SECRET_KEY OK"
+          test -n "$TCB_ENV_ID" && echo "ENV_ID OK"
+          npm install -g @cloudbase/cli
+          tcb login --apiKeyId "$TCB_SECRET_ID" --apiKey "$TCB_SECRET_KEY" --yes
+          tcb hosting deploy ./public -e "$TCB_ENV_ID"

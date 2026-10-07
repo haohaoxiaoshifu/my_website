@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>郑好的个人网站</title>
+    <link>https://YOUR_CLOUDBASE_DOMAIN/</link>
+    <description>郑好的个人网站：江苏警官学院数据警务技术学生，兴趣是无畏契约、篮球和弹钢琴。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 07 Oct 2026 07:11:33 GMT</lastBuildDate>
+    <item>
+      <title>我的个人网站是怎么搭起来的</title>
+      <link>https://YOUR_CLOUDBASE_DOMAIN/posts/how-this-site-is-built.html</link>
+      <guid isPermaLink="true">https://YOUR_CLOUDBASE_DOMAIN/posts/how-this-site-is-built.html</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+      <description>纯 HTML/CSS/JavaScript、Python 标准库构建脚本，加上 Git 与腾讯云 CloudBase 自动部署。</description>
+    </item>
+    <item>
+      <title>我的第一次 Agent 实验</title>
+      <link>https://YOUR_CLOUDBASE_DOMAIN/posts/hello-agent.html</link>
+      <guid isPermaLink="true">https://YOUR_CLOUDBASE_DOMAIN/posts/hello-agent.html</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+      <description>从一句模糊需求到一个可以验收的个人主页。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,44 @@
+# 极狐 GitLab CI：先构建静态站点，再部署到腾讯云 CloudBase 静态托管
+# 需要在 仓库 设置 -> CI/CD -> 变量 中配置：
+#   TCB_SECRET_ID、TCB_SECRET_KEY、TCB_ENV_ID
+stages:
+  - build
+  - deploy
+
+build-site:
+  stage: build
+  image: python:3.11-alpine
+  script:
+    - python scripts/collect_papers.py --limit 10
+    - python scripts/fetch_feeds.py
+    - python scripts/check_papers.py
+    - python scripts/build.py
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 day
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+deploy-cloudbase:
+  stage: deploy
+  image: node:20-alpine
+  dependencies:
+    - build-site
+  script:
+    - 'test -n "$TCB_SECRET_ID" && echo "SECRET_ID OK" || (echo "SECRET_ID EMPTY" && exit 1)'
+    - 'test -n "$TCB_SECRET_KEY" && echo "SECRET_KEY OK" || (echo "SECRET_KEY EMPTY" && exit 1)'
+    - 'test -n "$TCB_ENV_ID" && echo "ENV_ID OK" || (echo "ENV_ID EMPTY" && exit 1)'
+    - 'test -d public && test -n "$(ls -A public)" && echo "public dir OK" || (echo "ERROR public dir missing or empty" && exit 1)'
+    - npm install -g @cloudbase/cli
+    - tcb login --apiKeyId "$TCB_SECRET_ID" --apiKey "$TCB_SECRET_KEY" --yes
+    - |
+      if [ "$CI_COMMIT_BRANCH" = "main" ]; then
+        tcb hosting deploy ./public -e "$TCB_ENV_ID"
+      else
+        tcb hosting deploy ./public "/$CI_COMMIT_BRANCH" -e "$TCB_ENV_ID"
+      fi
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+    - if: '$CI_COMMIT_BRANCH'
+      when: manual
