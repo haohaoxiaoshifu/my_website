@@ -44,6 +44,6 @@ jobs:
           test -n "$TCB_SECRET_ID" && echo "SECRET_ID OK"
           test -n "$TCB_SECRET_KEY" && echo "SECRET_KEY OK"
           test -n "$TCB_ENV_ID" && echo "ENV_ID OK"
-          npm install -g @cloudbase/cli
-          tcb login --apiKeyId "$TCB_SECRET_ID" --apiKey "$TCB_SECRET_KEY" --yes
+          npm install -g @cloudbase/cli@2
+          tcb login --apiKeyId "$TCB_SECRET_ID" --apiKey "$TCB_SECRET_KEY"
           tcb hosting deploy ./public -e "$TCB_ENV_ID"
