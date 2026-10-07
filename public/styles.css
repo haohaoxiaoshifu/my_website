@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f6f8fb;
+  color: #1f2933;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+h1 {
+  color: #16324f;
+  font-size: 2.4rem;
+  margin: 0 0 4px;
+}
+
+.subtitle {
+  color: #5b6b7b;
+  margin-top: 0;
+}
+
+h2 {
+  color: #16324f;
+  border-bottom: 2px solid #c8a45c;
+  padding-bottom: 4px;
+  margin-top: 32px;
+}
+
+a {
+  color: #2a537d;
+}

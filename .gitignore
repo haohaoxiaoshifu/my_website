@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 注意：public/ 不能忽略，CloudBase CI 直接部署该目录
+# 注意：.opencode/ 不能忽略，自定义 Skill 需要一起上传
